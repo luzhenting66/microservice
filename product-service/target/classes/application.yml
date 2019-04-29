@@ -1,0 +1,60 @@
+server:
+  port: 8002
+spring:
+  application:
+    name: product-service
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/microservice-product?serverTimezone=GMT%2B8
+    username: root
+    password: lzt4922
+
+#mapper文件配置
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+
+#eureka配置
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka1:6001/eureka/,http://eureka2:6002/eureka/,http://eureka3:6003/eureka/
+  instance:
+    instance-id: ${spring.application.name}:${server.port}
+    prefer-ip-address: true
+    lease-renewal-interval-in-seconds: 2 #心跳检查，默认30s
+    lease-expiration-duration-in-seconds: 5  #超过5s,任务服务挂了，默认90s
+
+#监控信息配置
+info:
+  atrId: ${spring.application.name}
+  prot: ${server.port}
+
+#开启feign数据压缩
+feign:
+  compression:
+    request:
+      enabled: true
+      mime-types: # 可以被压缩的类型
+       - text/xml
+       - application/xml
+       - application/json
+      min-request-size: 2048 # 超过2048的字节进行压缩
+  hystrix:
+    enabled: true # springCloud D版本之后，需要打开
+#开启feign日志
+logging:
+  level:
+    cn.ppl.service: DEBUG
+
+#配置断路监控
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
+
+
+
+

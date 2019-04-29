@@ -1,0 +1,4 @@
+cn\ppl\base\BaseDataEntity.class
+cn\ppl\base\BaseEntity.class
+cn\ppl\entity\OrderEntity.class
+cn\ppl\entity\ProductEntity.class

@@ -1,0 +1,13 @@
+
+server:
+  port: 2000
+#spring:
+#  application:
+#    name: service-hystrixboard
+#eureka:
+#  client:
+#    service-url:
+#      defaultZone: http://eureka1:6001/eureka/,http://eureka2:6002/eureka/,http://eureka3:6003/eureka/
+#  instance:
+#    instance-id: ${spring.application.name}:${server.port}
+#    prefer-ip-address: true

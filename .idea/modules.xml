@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/eureka-service/eureka-service.iml" filepath="$PROJECT_DIR$/eureka-service/eureka-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka-service2/eureka-service2.iml" filepath="$PROJECT_DIR$/eureka-service2/eureka-service2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka-service3/eureka-service3.iml" filepath="$PROJECT_DIR$/eureka-service3/eureka-service3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/feign-service-api/feign-service-api.iml" filepath="$PROJECT_DIR$/feign-service-api/feign-service-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice.iml" filepath="$PROJECT_DIR$/microservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/order-service/order-service.iml" filepath="$PROJECT_DIR$/order-service/order-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/product-service/product-service.iml" filepath="$PROJECT_DIR$/product-service/product-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/service-api/service-api.iml" filepath="$PROJECT_DIR$/service-api/service-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/service-hystrix-dashboard/service-hystrix-dashboard.iml" filepath="$PROJECT_DIR$/service-hystrix-dashboard/service-hystrix-dashboard.iml" />
+    </modules>
+  </component>
+</project>

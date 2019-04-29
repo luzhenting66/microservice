@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="eureka-service" />
+        <module name="eureka-service2" />
+        <module name="eureka-service3" />
+        <module name="feign-service-api" />
+        <module name="microservice-api" />
+        <module name="microservice-eureka" />
+        <module name="microservice-eureka2" />
+        <module name="microservice-order" />
+        <module name="order-service" />
+        <module name="product-service" />
+        <module name="service-api" />
+        <module name="service-hystrix-dashboard" />
+        <module name="service-hystrixboard" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="1.8">
+      <module name="eureka-service" target="1.8" />
+      <module name="eureka-service2" target="1.8" />
+      <module name="eureka-service3" target="1.8" />
+      <module name="feign-service-api" target="1.8" />
+      <module name="microservice" target="1.8" />
+      <module name="microservice-api" target="1.8" />
+      <module name="microservice-eureka" target="1.8" />
+      <module name="microservice-eureka2" target="1.8" />
+      <module name="microservice-order" target="1.8" />
+      <module name="order-service" target="1.8" />
+      <module name="product-service" target="1.8" />
+      <module name="service-api" target="1.8" />
+      <module name="service-hystrix-dashboard" target="1.8" />
+      <module name="service-hystrixboard" target="1.8" />
+      <module name="service-zuul" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

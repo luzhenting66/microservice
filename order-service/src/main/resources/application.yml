@@ -1,0 +1,16 @@
+
+server:
+  port: 9001
+spring:
+  application:
+    name: microservice-order
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka1:6001/eureka/,http://eureka2:6002/eureka/,http://eureka3:6003/eureka/
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.application.name}:${server.port}
+feign:
+  hystrix:
+    enabled: true # springCloud D版本之后，需要打开
