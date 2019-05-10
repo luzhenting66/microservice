@@ -17,6 +17,9 @@
         <module>order-service</module>
         <module>feign-service-api</module>
         <module>service-hystrix-dashboard</module>
+        <module>microservice-turbine</module>
+        <module>zuul-service</module>
+        <module>common-facade</module>
     </modules>
     <properties>
         <jdk.version>1.8</jdk.version>

@@ -1,0 +1,14 @@
+server:
+  port: 4001
+spring:
+  application:
+    name: microservice-turbine
+eureka:
+  client:
+    service-url:
+      defaultZone:  http://eureka1:6001/eureka/,http://eureka2:6002/eureka/,http://eureka3:6003/eureka/
+    register-with-eureka: false
+turbine:
+  app-config: product-service,order-service
+  cluster-name-expression: new String("default")
+

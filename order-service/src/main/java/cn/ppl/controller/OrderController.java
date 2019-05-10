@@ -7,6 +7,7 @@ package cn.ppl.controller;
 import cn.ppl.entity.OrderEntity;
 import cn.ppl.entity.ProductEntity;
 import cn.ppl.service.IProductClientService;
+import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -30,6 +31,7 @@ public class OrderController {
     @Autowired
     private IProductClientService productFeignService;
 
+    @HystrixCommand
     @RequestMapping("/get/{id}")
     public OrderEntity get(@PathVariable("id") long id) {
 

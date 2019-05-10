@@ -6,6 +6,7 @@ package cn.ppl.controller;
 
 import cn.ppl.entity.ProductEntity;
 import cn.ppl.service.ProductService;
+import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -30,6 +31,7 @@ public class ProductController {
     @Autowired
     private ProductService productService;
 
+    @HystrixCommand
     @RequestMapping(value = "/get/{id}")
     public ProductEntity get(@PathVariable("id") long id) {
         return productService.findById(id);

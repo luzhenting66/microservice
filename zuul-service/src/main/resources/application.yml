@@ -1,0 +1,24 @@
+server:
+  port: 5001
+spring:
+  application:
+    name: zuul-service
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka1:6001/eureka/,http://eureka2:6002/eureka/,http://eureka3:6003/eureka/
+  instance:
+    prefer-ip-address: true
+    instance-id: zuul-service
+    lease-expiration-duration-in-seconds: 5
+    lease-renewal-interval-in-seconds: 2
+zuul:
+  routes:
+    products:
+      path: /product/**
+      serviceId: PRODUCT-SERVICE
+    orders:
+      path: /order/**
+      serviceId: ORDER-SERVICE
+
+
